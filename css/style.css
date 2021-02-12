@@ -1,0 +1,165 @@
+:root {
+    --white-text: #FFFFFF;
+    --blue-text: #2196F3;
+    --grey-text: #757575;
+    --graphite-text: #212121;
+    --black-text: #000000;
+    --grey-text-op60: rgba(255, 255, 255, 0.6);
+    --back-gray: #2F303A;
+    --back-white: #E5E5E5;
+    --back-gray-light: #F5F4FA;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+  }
+
+li {
+    text-decoration: none;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--black-text);
+    font-size: 26px;
+
+}
+
+.logo-blue {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--blue-text);
+    font-size: 26px;
+}
+
+.logo-footer {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: var(--white-text);
+}
+
+/* .nav-link:active {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--blue-text);
+} */
+
+.isActive .nav-link {
+    color: var(--blue-text);
+
+}
+
+
+.nav-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--graphite-text);
+}
+
+.nav-link:hover {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--blue-text);
+}
+
+.contacts {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--grey-text);
+}
+
+.contacts:hover {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--blue-text);
+}
+
+.order {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--white-text);
+}
+.hero {
+    background: var(--back-gray);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    color: var(--white-text);
+}
+
+.advantages {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--graphite-text);
+}
+
+.description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--grey-text);
+}
+
+h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--graphite-text);
+}
+
+.name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--graphite-text);
+}
+
+.specialty {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--grey-text);
+}
+
+.adress {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--white-text);
+}
+
+footer {
+    background: var(--back-gray);
+}
+
+.footer-contacts {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--grey-text-op60);
+}

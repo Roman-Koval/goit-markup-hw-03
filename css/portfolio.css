@@ -1,0 +1,169 @@
+:root {
+    --white-text: #FFFFFF;
+    --blue-text: #2196F3;
+    --grey-text: #757575;
+    --graphite-text: #212121;
+    --black-text: #000000;
+    --grey-text-op60: rgba(255, 255, 255, 0.6);
+    --back-gray: #2F303A;
+    --back-white: #E5E5E5;
+    --back-gray-light: #F5F4FA;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+  }
+
+li {
+    text-decoration: none;
+  }
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--black-text);
+
+}
+
+.logo-blue {
+    font-family: Raleway;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bold;
+    color: var(--blue-text);
+}
+
+.logo-footer {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: var(--white-text);
+}
+
+/* .nav-link:active {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--blue-text);
+} */
+
+.nav-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--graphite-text);
+}
+
+.nav-link:hover {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--blue-text);
+}
+
+.isActive .nav-link {
+    color: var(--blue-text);
+}
+
+.contacts {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--grey-text);
+}
+
+.contacts:hover {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--blue-text);
+}
+
+.button {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #212121;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.button:hover {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #2196F3;
+    border-radius: 4px;
+}
+
+.button:active {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+button,button:active,button:focus {
+    outline: none;
+    border: none;
+}
+
+.button:focus {
+    color: #FFFFFF;
+}
+
+button:focus {
+    background: #2196F3;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #212121;
+}
+
+.work-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #757575;
+}
+
+.adress {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--white-text);
+}
+
+footer {
+    background: var(--back-gray);
+}
+
+.footer-contacts {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--grey-text-op60);
+}
