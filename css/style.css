@@ -10,8 +10,15 @@
     --back-gray-light: #F5F4FA;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -20,10 +27,45 @@ a {
 
 li {
     text-decoration: none;
+    margin: 0;
   }
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    border: 1px solid red;
+}
+
+/*HEDER*/
+
+.header-nav,
+.nav-list,
+.contacts-list {
+    display: flex;
+}
+
+.header-nav {
+    
+    padding-top: 24px;
+    
+}
+
+
+.nav-list {
+    margin-left: 93px;
+    
+}
+
+.nav-list li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts-list li:last-child {
+    margin-left: 50px;
 }
 
 .logo {
@@ -43,14 +85,6 @@ body {
     font-size: 26px;
 }
 
-.logo-footer {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    color: var(--white-text);
-}
-
 /* .nav-link:active {
     font-style: normal;
     font-weight: 500;
@@ -63,12 +97,12 @@ body {
 
 }
 
-
 .nav-link {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     color: var(--graphite-text);
+    padding: 32px 0;
 }
 
 .nav-link:hover {
@@ -85,6 +119,10 @@ body {
     color: var(--grey-text);
 }
 
+.contacts-list {
+display: flex;
+}
+
 .contacts:hover {
     font-style: normal;
     font-weight: 500;
@@ -92,15 +130,11 @@ body {
     color: var(--blue-text);
 }
 
-.order {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    color: var(--white-text);
-}
-.hero {
-    background: var(--back-gray);
-}
+/* HERO*/
+
+
+.container-hero { display: table-cell; vertical-align: middle; }
+
 
 h1 {
     text-transform: uppercase;
@@ -108,28 +142,125 @@ h1 {
     font-weight: 900;
     font-size: 44px;
     color: var(--white-text);
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding-top: 200px;
+    
 }
 
+.order {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--white-text);
+    text-align: center;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    vertical-align:middle;
+    margin-bottom: 200px;
+}
+
+.hero {
+    display: table;
+    width:100%;
+    background: #2F303A;
+}
+
+
+/*ADVANTAGES*/
 .advantages {
+    margin-top: 84px;
+    margin-bottom: 94px;
+}
+
+.advantages-list {
+    display: flex;
+}
+
+.advantages-li {
+    width: 270px;
+}
+
+.advantages-list li:not(:last-child) {
+    margin-right: 30px;
+}
+.advantages-title {
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
     color: var(--graphite-text);
+    padding-bottom: 10px;
 }
 
 .description {
+    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
+    line-height: 1.71;
     color: var(--grey-text);
+    letter-spacing: 0.03em;
 }
 
-h2 {
+/*MAKE*/
+
+.make-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #212121;
+    padding-bottom: 50px;
+}
+
+.make-list {
+    display: flex;
+}
+
+.make-list li:not(:last-child) {
+    margin-right: 30px;
+}
+
+/*TEAM*/
+
+.team-container {
+    background: #F5F4FA;
+    margin-top: 94px;
+}
+
+.team-title {
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     color: var(--graphite-text);
+    padding-top: 94px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.team-box {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team {
+    display: flex;
+    padding-bottom: 94px;
+}
+
+.team li:not(:last-child) {
+    margin-right: 30px;
 }
 
 .name {
@@ -137,6 +268,11 @@ h2 {
     font-weight: 500;
     font-size: 16px;
     color: var(--graphite-text);
+    text-align: center;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .specialty {
@@ -144,8 +280,34 @@ h2 {
     font-weight: normal;
     font-size: 16px;
     color: var(--grey-text);
+    text-align: center;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    padding-bottom: 30px;
 }
 
+
+
+/*FOOTER*/
+.footer {
+    width: 1200px;
+    padding: 60px 15px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    background: var(--back-gray);
+}
+
+
+.logo-footer {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: var(--white-text);
+    
+    padding-bottom: 20px;
+}
 .adress {
     font-style: normal;
     font-weight: normal;
@@ -153,13 +315,13 @@ h2 {
     color: var(--white-text);
 }
 
-footer {
-    background: var(--back-gray);
-}
-
 .footer-contacts {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     color: var(--grey-text-op60);
+    display: flex;
+    flex-direction: column;
+    padding-top: 9px;
 }
+
