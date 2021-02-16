@@ -186,8 +186,8 @@ h1 {
 
 /*ADVANTAGES*/
 .advantages {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .advantages-list {
@@ -224,6 +224,10 @@ h1 {
 
 /*MAKE*/
 
+.make {
+    padding-bottom: 94px;
+}
+
 .make-title {
     font-family: Roboto;
     font-style: normal;
@@ -248,7 +252,9 @@ h1 {
 
 .team-container {
     background: #F5F4FA;
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
 }
 
 .team-title {
@@ -256,7 +262,7 @@ h1 {
     font-weight: bold;
     font-size: 36px;
     color: var(--graphite-text);
-    padding-top: 94px;
+    
     padding-bottom: 50px;
     text-align: center;
 }
@@ -269,7 +275,7 @@ h1 {
 
 .team {
     display: flex;
-    padding-bottom: 94px;
+    
 }
 
 .team li:not(:last-child) {
