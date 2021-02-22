@@ -195,7 +195,7 @@ h1 {
 }
 
 .advantages-li {
-    width: 270px;
+    flex-basis: calc(100%/4);
 }
 
 .advantages-list li:not(:last-child) {
